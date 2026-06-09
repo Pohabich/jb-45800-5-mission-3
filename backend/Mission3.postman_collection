@@ -1,0 +1,167 @@
+{
+  "info": {
+    "_postman_id": "55a7f446-d9e5-4834-a8e4-ccc5c15dcfcd",
+    "name": "Mission3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53516020",
+    "_collection_link": "https://go.postman.co/collection/53516020-55a7f446-d9e5-4834-a8e4-ccc5c15dcfcd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "groups",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/groups",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "groups"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "meetingById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/meetings/meeting/ca0aa872-63d1-11f1-94d8-2a3f0c421754",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "meeting",
+            "ca0aa872-63d1-11f1-94d8-2a3f0c421754"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "meetingsByGroup_N",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/meetings/group/81069762-63d0-11f1-94d8-2a3f0c421754",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "group",
+            "81069762-63d0-11f1-94d8-2a3f0c421754"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "meetingsByGroup_1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/meetings/group/8106d1d9-63d0-11f1-94d8-2a3f0c421754",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "group",
+            "8106d1d9-63d0-11f1-94d8-2a3f0c421754"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "meetingsByGroup_0",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/meetings/group/8106ebf6-63d0-11f1-94d8-2a3f0c421754",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "group",
+            "8106ebf6-63d0-11f1-94d8-2a3f0c421754"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "newMeeting",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"groupId\": \"81069762-63d0-11f1-94d8-2a3f0c421754\",\r\n    \"openDate\": \"2026-06-16T06:58:20.000Z\",\r\n    \"closeDate\": \"2026-06-17T09:58:20.000Z\",\r\n    \"description\": \"Initial meeting\",\r\n    \"room\": \"New York room\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/meetings/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteMeeting",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"groupId\": \"81069762-63d0-11f1-94d8-2a3f0c421754\",\r\n    \"openDate\": \"2026-06-16T06:58:20.000Z\",\r\n    \"closeDate\": \"2026-06-17T09:58:20.000Z\",\r\n    \"description\": \"Initial meeting\",\r\n    \"room\": \"New York room\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/meetings/ca0aa872-63d1-11f1-94d8-2a3f0c421754",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "meetings",
+            "ca0aa872-63d1-11f1-94d8-2a3f0c421754"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
